@@ -9,7 +9,7 @@ RUN apk update
 
 # Install packages
 RUN apk add --update \
-        git-core \
+        git \
         nginx \
         openssl
 
