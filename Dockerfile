@@ -20,4 +20,4 @@ RUN rm -rf /var/lib/apt/lists/*
 EXPOSE 80 443
 
 # Run ash
-CMD /bin/ash
+ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
