@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo docker run --detach -p "80:80" -p "443:443" -v /srv/git:/srv/git --name git-http -t ah-git-http
