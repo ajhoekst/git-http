@@ -5,10 +5,10 @@ FROM alpine:latest
 MAINTAINER Andrew Hoekstra <git-http@andrewhoekstra.com>
 
 # Update package list
-RUN apk
+RUN apk update
 
 # Install packages
-RUN apt-get install -y \
+RUN apk add --update \
         git-core \
         nginx \
         openssl
