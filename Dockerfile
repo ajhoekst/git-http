@@ -1,5 +1,5 @@
 # Download base image
-FROM apline:latest
+FROM alpine:latest
 
 # Set maintainer
 MAINTAINER Andrew Hoekstra <git-http@andrewhoekstra.com>
