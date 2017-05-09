@@ -19,5 +19,5 @@ RUN rm -rf /var/lib/apt/lists/*
 # Make the container externally accessible
 EXPOSE 80 443
 
-# Run bash
-RUN /bin/bash
+# Run ash
+RUN /bin/ash
