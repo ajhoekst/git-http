@@ -20,4 +20,4 @@ RUN rm -rf /var/lib/apt/lists/*
 EXPOSE 80 443
 
 # Run ash
-RUN /bin/ash
+CMD /bin/ash
