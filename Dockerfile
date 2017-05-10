@@ -1,5 +1,5 @@
 # Download base image
-FROM alpine:latest
+FROM nginx:alpine
 
 # Set maintainer
 MAINTAINER Andrew Hoekstra <git-http@andrewhoekstra.com>
@@ -8,13 +8,12 @@ MAINTAINER Andrew Hoekstra <git-http@andrewhoekstra.com>
 RUN apk update
 
 # Install packages
-RUN apk add --update \
+RUN apk add \
         git \
-        nginx \
         openssl
 
-# Clean apt cache to keep image small
-RUN rm -rf /var/lib/apt/lists/*
+# Clean apk cache to keep image small
+RUN rm -rf /var/lib/apk/*
 
 # Make the container externally accessible
 EXPOSE 80 443
