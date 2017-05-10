@@ -17,6 +17,3 @@ RUN rm -rf /var/lib/apk/*
 
 # Make the container externally accessible
 EXPOSE 80 443
-
-# Run ash
-ENTRYPOINT ["/bin/ash"]
